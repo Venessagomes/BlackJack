@@ -51,7 +51,7 @@ for (let i = 0; i < playerHand.length; i++) {
         let cardDiv = document.getElementById(`${i}`)
         cardDiv.classList.add(`card`)
         cardDiv.classList.add(playerHand[i])
-        console.log(cardDiv)
+
     }
 }
 
@@ -78,9 +78,7 @@ function shuffle() {
     for (let i = 0; i < 2; i++) {
         let randNum = Math.floor(Math.random() * deck.length)
         let card = deck.splice(randNum, 1)
-        console.log(card, "--------------------")
         playerHand.push(card[0]) //
-        console.log("this is the player hand", playerHand[0])
         document.getElementById('pcard1').classList.add("card", "xlarge", `${playerHand[0]}`)
         document.getElementById('pcard2').classList.add("card", "xlarge", `${playerHand[1]}`)
 
@@ -90,7 +88,6 @@ function shuffle() {
         let randNum = Math.floor(Math.random() * deck.length)
         const card = deck.splice(randNum, 1)
         dealerHand.push(card[0])
-        console.log("this is the dealer hand", dealerHand)
         document.getElementById('dcard0').classList.add("card", "xlarge", `${dealerHand[0]}`)
     } sumCards()
     render()
@@ -102,9 +99,9 @@ function hit() {
     let card = deck.splice(randNum, 1)
     if (playerSum < 21 && playerSum === 16) {
         playerHand.push(card[0])
-        console.log(playerHand)
+      
     } else {
-        console.log("you bust")
+        
     } sumCards()
     render()
     document.getElementById('pcard3').classList.add("card", "xlarge", `${playerHand[2]}`)
@@ -190,10 +187,7 @@ function compareChoices() {
     let card = deck.splice(randNum, 1)
     if (dealerSum < 21) {
         dealerHand.push(card[0])
-        console.log("dealers sum:", dealerHand)
-        console.log("players sum", playerHand)
-        console.log("dealers sum:", dealerSum)
-        console.log("players sum", playerSum)
+        
     }
     document.getElementById('dcard1').classList.add("card", "xlarge", `${dealerHand[1]}`)
     document.getElementById('dcard2').classList.add("card", "xlarge", `${dealerHand[2]}`)
@@ -203,25 +197,24 @@ function compareChoices() {
 
     if (playerSum === dealerSum) {
         message = 'It is a tie'
-        console.log('message:', message)
+
     } else if (playerSum > dealerSum && playerSum <= 21) {
         message = 'Player Wins'
-        console.log('message:', message)
+        
     } else if (dealerSum > playerSum && dealerSum > 21) {
         message = 'Player Wins'
-        console.log('message:', message)
+     
     } else if (dealerSum > playerSum && dealerSum <= 21) {
         message = 'Dealer Wins'
-        console.log('message:', message)
+     
     } else if (playerSum > dealerSum && playerSum > 21) {
         message = 'Dealer Wins'
-        console.log('message:', message)
+     
     } else if (playerSum > 21 && dealerSum < 21) {
         message = 'Dealer Wins'
-        console.log('message:', message)
     } else {
         message = 'Draw another card'
-        console.log('message:', message)
+       
     }
     displayMes.textContent = message
 
