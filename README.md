@@ -22,4 +22,4 @@ The home screen welcomes the players to the game. The deal button randomly shuff
 
 ##Links
 1. [GAME LINK GITPAGES](https://venessagomes.github.io/BlackJack/)
-2. [My GitHub](https://git.generalassemb.ly/venessag/project-one-game.git)
+2. [My GitHub](https://github.com/Venessagomes/BlackJack)
