@@ -21,5 +21,5 @@ The home screen welcomes the players to the game. The deal button randomly shuff
 - Split Aces and 8
 
 ##Links
-1. [GAME LINK GITPAGES]()
+1. [GAME LINK GITPAGES](https://venessagomes.github.io/BlackJack/)
 2. [My GitHub](https://git.generalassemb.ly/venessag/project-one-game.git)
