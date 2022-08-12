@@ -435,6 +435,7 @@ body {
   background: radial-gradient(circle at -1% 57.5%, rgb(1, 68, 33) 0%, rgb(0, 100, 0) 90%);
   height: 100%;
   font-family: 'Cormorant SC', serif;
+  text-align: center;
 }
 
 #title {

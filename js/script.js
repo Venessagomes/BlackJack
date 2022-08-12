@@ -148,7 +148,7 @@ function sumCards() {
         } else { playerSum += 11 }
     } else { playerSum += Number(cardTwoValue) }
 }
-console.log("this is player sum", playerSum)
+
 
 
 function sumCardsDealer() {
@@ -182,8 +182,6 @@ function sumCardsDealer() {
             dealerSum += 1
         } else { dealerSum += 11 }
     } else { dealerSum += Number(dealerTwoValue) }
-
-    console.log("This is dealer sum", dealerSum)
 }
 
 
