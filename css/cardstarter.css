@@ -450,6 +450,10 @@ main {
   height: 100%;
 }
 
+#game-board {
+  display: none;
+}
+
 #game-board p {
   margin-top: auto;
 }
@@ -462,6 +466,13 @@ button {
   display: inline-block;
   margin: 20px;
   font-size: 15px;
+}
+#player {
+  display: none;
+}
+
+#dealer {
+  display: none;
 }
 
 #message {
